@@ -1,0 +1,16 @@
+{
+    "name": "Jira++",
+    "version": "1.2",
+    "description": "Improve Jira's UI",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://*.atlassian.net/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {"128": "icon.png"},
+    "manifest_version": 2
+}
